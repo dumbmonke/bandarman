@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: #04062e;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        .header {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        
+        .project h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .project p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #f24973;
+            color: #ffffff;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .button:hover {
+            background-color: #ff6b8b;
+        }
+        
+        .background-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-shapes">
+        <!-- Add your background shapes or emojis here -->
+        <img src="jojo.png" alt="Jojo Character Stand" width="200" height="200">
+    </div>
+    
+    <div class="container">
+        <h1 class="header">Welcome to My Portfolio</h1>
+        <p>Ruturaj Rana - Aspiring Software Developer</p>
+        
+        <div class="project">
+            <h2>James Arthur Fan App</h2>
+            <p>
+                Tech Stack: JavaScript, React, API integration<br>
+                Challenges: Integrating music playback, retrieving trivia, generating AI art<br>
+                Solution: Utilized James Arthur APIs for music and trivia, and AI libraries for generating art<br>
+                <a class="button" href="https://example.com/james-arthur-app">View Project</a>
+            </p>
+        </div>
+        
+        <!-- Add more projects or sections as needed -->
+    </div>
+    
+    <script>
+        // Add any JavaScript code you need here, such as background music
+        var audio = new Audio('lofi.mp3');
+        audio.play();
+    </script>
+</body>
+</html>
